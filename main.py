@@ -18,6 +18,7 @@ class Solution(object):
         for c in C:
             for d in D:
                 if -(c+d) in twosum_table:
-                    count += 1
+                    count = count + twosum_table[-(c+d)]
+                    
         return count
         
